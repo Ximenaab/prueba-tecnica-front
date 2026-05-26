@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import Login from "./pages/Login"
+import Products from "./pages/Products"
 import ProtectedRoute from "./components/ProtectedRoute"
 import MainLayout from "./layouts/MainLayout"
 
@@ -12,7 +13,7 @@ function App() {
         element={
           <ProtectedRoute>
             <MainLayout>
-              <h1 className="text-2xl font-bold">Bienvenido al panel!</h1>
+              <Products />
             </MainLayout>
           </ProtectedRoute>
         }
